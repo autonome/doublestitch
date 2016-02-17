@@ -11,6 +11,5 @@
   "license": "MIT",
   "keywords": [
     "jetpack", "pocket", "bookmarking"
-  ],
-  "icon": "./icon.png"
+  ]
 }
