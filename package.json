@@ -1,0 +1,16 @@
+{
+  "title": "Doublestitch",
+  "name": "doublestitch",
+  "version": "0.0.1",
+  "description": "Save pages to Pocket in a clear and unobtrusive way.",
+  "main": "index.js",
+  "author": "Dietrich Ayala",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack", "pocket", "bookmarking"
+  ],
+  "icon": "./icon.png"
+}
