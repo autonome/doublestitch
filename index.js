@@ -12,6 +12,7 @@ var self = require('sdk/self'),
     tabs = require('sdk/tabs'),
     buttons = require('sdk/ui/button/action'),
     button = null,
+    hotkeys = require('sdk/hotkeys'),
     notifications = require('sdk/notifications'),
     Request = require('sdk/request').Request,
     key = '51343-d278ca50dc4358e630726fad',
@@ -32,6 +33,13 @@ button = buttons.ActionButton({
     '16': './favicon.ico'
   },
   onClick: handleClick
+});
+
+buttonHotkey = hotkeys.Hotkey({
+  combo: 'accel-alt-w', //close to old-school Pocket addon shortcut
+  onPress: function() {
+    handleClick();
+  }
 });
 
 function notify(text) {
