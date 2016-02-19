@@ -2,6 +2,7 @@
 
 vNext
 
+* keyboard shortcut
 * make panel login work
 * local cache for instant save/unsave UI
 * some type of automatic bookmark<->pocket sync
@@ -16,7 +17,7 @@ var self = require('sdk/self'),
     Request = require('sdk/request').Request,
     key = '51343-d278ca50dc4358e630726fad',
     panelURI = self.data.url('pocket.html'),
-    redirectURI = 'http://localhost/asdfasdf',
+    redirectURI = 'about:blank',
     panel = null,
     storage = require('sdk/simple-storage').storage,
     accessToken = storage.accessToken || null,
